@@ -1,0 +1,1054 @@
+{
+    "type": "database",
+    "name": "OWAF-database",
+    "objects": [
+        {
+            "type": "table",
+            "database": null,
+            "name": "audio",
+            "withoutRowId": false,
+            "strict": false,
+            "ddl": "CREATE TABLE audio (audio_id integer PRIMARY KEY AUTOINCREMENT, name varchar (255) NOT NULL, year integer, artist varchar (255), topic varchar (255) NOT NULL DEFAULT Audio, category varchar (255) NOT NULL, type varchar (255) NOT NULL, record_label varchar (255), media_piece_path varchar (255), screenshot_path varchar (255), file_name varchar (255), file_size float, data_metric varchar (255), source_link text, download_link text, magnet_link text, sha256 varchar (64), sha1 varchar (40), md5 varchar (32), crc32 varchar (8))",
+            "columns": [
+                {
+                    "name": "audio_id",
+                    "type": "integer",
+                    "constraints": [
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY AUTOINCREMENT"
+                        }
+                    ]
+                },
+                {
+                    "name": "name",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "year",
+                    "type": "integer"
+                },
+                {
+                    "name": "artist",
+                    "type": "varchar"
+                },
+                {
+                    "name": "topic",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "DEFAULT",
+                            "definition": "DEFAULT Audio"
+                        }
+                    ]
+                },
+                {
+                    "name": "category",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "type",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "record_label",
+                    "type": "varchar"
+                },
+                {
+                    "name": "media_piece_path",
+                    "type": "varchar"
+                },
+                {
+                    "name": "screenshot_path",
+                    "type": "varchar"
+                },
+                {
+                    "name": "file_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "file_size",
+                    "type": "float"
+                },
+                {
+                    "name": "data_metric",
+                    "type": "varchar"
+                },
+                {
+                    "name": "source_link",
+                    "type": "text"
+                },
+                {
+                    "name": "download_link",
+                    "type": "text"
+                },
+                {
+                    "name": "magnet_link",
+                    "type": "text"
+                },
+                {
+                    "name": "sha256",
+                    "type": "varchar"
+                },
+                {
+                    "name": "sha1",
+                    "type": "varchar"
+                },
+                {
+                    "name": "md5",
+                    "type": "varchar"
+                },
+                {
+                    "name": "crc32",
+                    "type": "varchar"
+                }
+            ],
+            "rows": [
+                [
+                    1,
+                    "Dreamer",
+                    2023,
+                    "Alan Walker",
+                    "Audio",
+                    "Music",
+                    "Electronic",
+                    "NoCopyrightSounds",
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    "https:\/\/www.youtube.com\/watch?v=xN1WOlptE58",
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "database": null,
+            "name": "documents",
+            "withoutRowId": false,
+            "strict": false,
+            "ddl": "CREATE TABLE documents (documents_id integer PRIMARY KEY AUTOINCREMENT, name varchar (255) NOT NULL, year integer, author varchar (255), topic varchar (255) NOT NULL DEFAULT Documents, category varchar (255) NOT NULL, type varchar (255) NOT NULL, publisher varchar (255), media_piece_path varchar (255), screenshot_path varchar (255), file_name varchar (255), file_size float, data_metric varchar (255), source_link text, download_link text, magnet_link text, sha256 varchar (64), sha1 varchar (40), md5 varchar (32), crc32 varchar (8))",
+            "columns": [
+                {
+                    "name": "documents_id",
+                    "type": "integer",
+                    "constraints": [
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY AUTOINCREMENT"
+                        }
+                    ]
+                },
+                {
+                    "name": "name",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "year",
+                    "type": "integer"
+                },
+                {
+                    "name": "author",
+                    "type": "varchar"
+                },
+                {
+                    "name": "topic",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "DEFAULT",
+                            "definition": "DEFAULT Documents"
+                        }
+                    ]
+                },
+                {
+                    "name": "category",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "type",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "publisher",
+                    "type": "varchar"
+                },
+                {
+                    "name": "media_piece_path",
+                    "type": "varchar"
+                },
+                {
+                    "name": "screenshot_path",
+                    "type": "varchar"
+                },
+                {
+                    "name": "file_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "file_size",
+                    "type": "float"
+                },
+                {
+                    "name": "data_metric",
+                    "type": "varchar"
+                },
+                {
+                    "name": "source_link",
+                    "type": "text"
+                },
+                {
+                    "name": "download_link",
+                    "type": "text"
+                },
+                {
+                    "name": "magnet_link",
+                    "type": "text"
+                },
+                {
+                    "name": "sha256",
+                    "type": "varchar"
+                },
+                {
+                    "name": "sha1",
+                    "type": "varchar"
+                },
+                {
+                    "name": "md5",
+                    "type": "varchar"
+                },
+                {
+                    "name": "crc32",
+                    "type": "varchar"
+                }
+            ],
+            "rows": [
+                [
+                    1,
+                    "The Wizard of Oz Collection",
+                    1900,
+                    "Frank L Baum",
+                    "Documents",
+                    "Books",
+                    "Fiction",
+                    "",
+                    "",
+                    "",
+                    "Many",
+                    null,
+                    "GB",
+                    "https:\/\/archive.org\/embed\/the-wizard-of-oz-a-complete-public-domain-collection",
+                    null,
+                    "magnet:?xt=urn:btih:c3bae8a379e17cba3a4addc1e69e562ec90af5ad&dn=the-wizard-of-oz-a-complete-public-domain-collection&ws=http:\/\/ia802707.us.archive.org\/35\/items\/&ws=http:\/\/ia902707.us.archive.org\/35\/items\/&ws=https:\/\/archive.org\/download\/",
+                    "Many",
+                    "Many",
+                    "Many",
+                    "Many"
+                ],
+                [
+                    3,
+                    "1984",
+                    2015,
+                    "George Orwell",
+                    "Documents",
+                    "Books",
+                    "Fiction",
+                    "",
+                    null,
+                    null,
+                    "1984.pdf",
+                    null,
+                    "MB",
+                    "https:\/\/archive.org\/details\/GeorgeOrwells1984",
+                    null,
+                    "magnet:?xt=urn:btih:ee228fee5f1e4e158a360b0d1f9fa6308dc5b897&dn=GeorgeOrwells1984&ws=http:\/\/ia601300.us.archive.org\/28\/items\/&ws=http:\/\/ia801300.us.archive.org\/28\/items\/&ws=https:\/\/archive.org\/download\/",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "database": null,
+            "name": "politics",
+            "withoutRowId": false,
+            "strict": false,
+            "ddl": "CREATE TABLE politics (politics_id INTEGER PRIMARY KEY AUTOINCREMENT, name VARCHAR (255) NOT NULL, year INTEGER, politician VARCHAR (255), topic VARCHAR (255) NOT NULL DEFAULT 'Politics', category VARCHAR (255) NOT NULL, type VARCHAR (255) NOT NULL, news_company VARCHAR (255), media_piece_path VARCHAR (255), screenshot_path VARCHAR (255), file_name VARCHAR (255), file_size FLOAT, data_metric VARCHAR (255), source_link TEXT, download_link TEXT, magnet_link TEXT, sha256 VARCHAR (64), sha1 VARCHAR (40), md5 VARCHAR (32), crc32 VARCHAR (8))",
+            "columns": [
+                {
+                    "name": "politics_id",
+                    "type": "INTEGER",
+                    "constraints": [
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY AUTOINCREMENT"
+                        }
+                    ]
+                },
+                {
+                    "name": "name",
+                    "type": "VARCHAR",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "year",
+                    "type": "INTEGER"
+                },
+                {
+                    "name": "politician",
+                    "type": "VARCHAR"
+                },
+                {
+                    "name": "topic",
+                    "type": "VARCHAR",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "DEFAULT",
+                            "definition": "DEFAULT 'Politics'"
+                        }
+                    ]
+                },
+                {
+                    "name": "category",
+                    "type": "VARCHAR",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "type",
+                    "type": "VARCHAR",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "news_company",
+                    "type": "VARCHAR"
+                },
+                {
+                    "name": "media_piece_path",
+                    "type": "VARCHAR"
+                },
+                {
+                    "name": "screenshot_path",
+                    "type": "VARCHAR"
+                },
+                {
+                    "name": "file_name",
+                    "type": "VARCHAR"
+                },
+                {
+                    "name": "file_size",
+                    "type": "FLOAT"
+                },
+                {
+                    "name": "data_metric",
+                    "type": "VARCHAR"
+                },
+                {
+                    "name": "source_link",
+                    "type": "TEXT"
+                },
+                {
+                    "name": "download_link",
+                    "type": "TEXT"
+                },
+                {
+                    "name": "magnet_link",
+                    "type": "TEXT"
+                },
+                {
+                    "name": "sha256",
+                    "type": "VARCHAR"
+                },
+                {
+                    "name": "sha1",
+                    "type": "VARCHAR"
+                },
+                {
+                    "name": "md5",
+                    "type": "VARCHAR"
+                },
+                {
+                    "name": "crc32",
+                    "type": "VARCHAR"
+                }
+            ],
+            "rows": [
+                [
+                    1,
+                    "Presidential Inauguration",
+                    2025,
+                    "Joe Biden",
+                    "Politics",
+                    "Government",
+                    "Ceremony",
+                    "Associated Press",
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                [
+                    2,
+                    "Midterm Election Rally",
+                    2026,
+                    "Various Candidates",
+                    "Politics",
+                    "Campaign",
+                    "Rally",
+                    "CNN",
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                [
+                    3,
+                    "Senate Hearing on Climate Change",
+                    2025,
+                    "Various Senators",
+                    "Politics",
+                    "Environment",
+                    "Hearing",
+                    "Reuters",
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                [
+                    4,
+                    "Town Hall Meeting on Healthcare",
+                    2026,
+                    "Representative Smith",
+                    "Politics",
+                    "Healthcare",
+                    "Meeting",
+                    "Fox News",
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                [
+                    5,
+                    "Debate on Economic Policy",
+                    2024,
+                    "Candidate A, Candidate B",
+                    "Politics",
+                    "Economy",
+                    "Debate",
+                    "MSNBC",
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "database": null,
+            "name": "software",
+            "withoutRowId": false,
+            "strict": false,
+            "ddl": "CREATE TABLE software (software_id integer PRIMARY KEY AUTOINCREMENT, name varchar (255) NOT NULL, year integer, developer varchar (255), topic varchar (255) NOT NULL DEFAULT Software, category varchar (255) NOT NULL, type varchar (255) NOT NULL, architecture varchar (255), media_piece_path varchar (255), screenshot_path varchar (255), file_name varchar (255), file_size float, data_metric varchar (255), source_link text, download_link text, magnet_link text, sha256 varchar (64), sha1 varchar (40), md5 varchar (32), crc32 varchar (8))",
+            "columns": [
+                {
+                    "name": "software_id",
+                    "type": "integer",
+                    "constraints": [
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY AUTOINCREMENT"
+                        }
+                    ]
+                },
+                {
+                    "name": "name",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "year",
+                    "type": "integer"
+                },
+                {
+                    "name": "developer",
+                    "type": "varchar"
+                },
+                {
+                    "name": "topic",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "DEFAULT",
+                            "definition": "DEFAULT Software"
+                        }
+                    ]
+                },
+                {
+                    "name": "category",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "type",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "architecture",
+                    "type": "varchar"
+                },
+                {
+                    "name": "media_piece_path",
+                    "type": "varchar"
+                },
+                {
+                    "name": "screenshot_path",
+                    "type": "varchar"
+                },
+                {
+                    "name": "file_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "file_size",
+                    "type": "float"
+                },
+                {
+                    "name": "data_metric",
+                    "type": "varchar"
+                },
+                {
+                    "name": "source_link",
+                    "type": "text"
+                },
+                {
+                    "name": "download_link",
+                    "type": "text"
+                },
+                {
+                    "name": "magnet_link",
+                    "type": "text"
+                },
+                {
+                    "name": "sha256",
+                    "type": "varchar"
+                },
+                {
+                    "name": "sha1",
+                    "type": "varchar"
+                },
+                {
+                    "name": "md5",
+                    "type": "varchar"
+                },
+                {
+                    "name": "crc32",
+                    "type": "varchar"
+                }
+            ],
+            "rows": [
+                [
+                    1,
+                    "Windows 11 Consumer 24H2",
+                    2024,
+                    "Microsoft",
+                    "Software",
+                    "Operating Systems",
+                    "Windows",
+                    "x64",
+                    "",
+                    "",
+                    "Win11_24H2_EnglishInternational_x64.iso",
+                    5.8,
+                    "GB",
+                    "https:\/\/www.microsoft.com\/en-gb\/software-download\/windows11",
+                    "",
+                    null,
+                    "d5a4c97c3e835c43b1b9a31933327c001766ce314608ba912f2fffc876044309",
+                    "1df19b01b5a6245640fcceaf6fbcdf3e03bc32b8",
+                    "88d80a8363a57cf643afb69a625c3fc6",
+                    "ffc0e527"
+                ],
+                [
+                    2,
+                    "Windows 10 Consumer 22H2",
+                    2024,
+                    "Microsoft",
+                    "Software",
+                    "Operating Systems",
+                    "Windows",
+                    "x64",
+                    "",
+                    "",
+                    "en-us_windows_10_consumer_editions_version_22h2_updated_nov_2024_x64_dvd_3eeacab9.iso",
+                    7.2,
+                    "GB",
+                    "https:\/\/drive.massgrave.dev\/en-us_windows_10_consumer_editions_version_22h2_updated_nov_2024_x64_dvd_3eeacab9.iso",
+                    "",
+                    null,
+                    "fcac487c81c6b15406a78341461d56edb768b00c07cc58e54ee06c48d88ff88a",
+                    "9fa9c88727cfe666367d2db9dd3f3d6422235ca3",
+                    "3bbccf110d9aacf8f658411aecf99fee",
+                    "81fc7e2c"
+                ],
+                [
+                    3,
+                    "Linux Mint 22.1",
+                    2025,
+                    "Linux Mint Teams and community",
+                    "Software",
+                    "Operating Systems",
+                    "Linux",
+                    "x64",
+                    "",
+                    "",
+                    "linuxmint-22.1-cinnamon-64bit.iso",
+                    3,
+                    "GB",
+                    "https:\/\/www.linuxmint.com\/edition.php?id=319",
+                    null,
+                    "magnet:?xt=urn:btih:5d4d25e0e66647c7e289202d788075d6884ec002&dn=linuxmint-22.1-cinnamon-64bit.iso&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce",
+                    "ccf482436df954c0ad6d41123a49fde79352ca71f7a684a97d5e0a0c39d7f39f",
+                    "1a0a080eac6481610fb47308a9d5a7909acc5a16",
+                    "befea08badd48a2478affe20c5a49d51",
+                    "5a43d8b8"
+                ],
+                [
+                    5,
+                    "LibreOffice 25.2.1",
+                    2025,
+                    "The Document Foundation",
+                    "Software",
+                    "Production",
+                    "Documents",
+                    "Many",
+                    "",
+                    "",
+                    "LibreOffice_25.2.1_OS_ARCHITECTURE.xyz",
+                    null,
+                    "MB",
+                    "https:\/\/www.libreoffice.org\/download\/download-libreoffice",
+                    null,
+                    null,
+                    "Many",
+                    "Many",
+                    "Many",
+                    "Many"
+                ],
+                [
+                    6,
+                    "Blender",
+                    2025,
+                    "Blender Foundation",
+                    "Software",
+                    "Production",
+                    "Graphics",
+                    "Many",
+                    "",
+                    "",
+                    "blender-4.3.2-OS-ARCHITECTURE.xyz",
+                    null,
+                    "MB",
+                    "https:\/\/www.blender.org\/download\/",
+                    null,
+                    null,
+                    "Many",
+                    "Many",
+                    "Many",
+                    "Many"
+                ],
+                [
+                    7,
+                    "DCP-7055",
+                    2013,
+                    "Brother",
+                    "Software",
+                    "Drivers",
+                    "Printer",
+                    "",
+                    "",
+                    "",
+                    "Many",
+                    "",
+                    "MB",
+                    "https:\/\/www.brother.co.uk\/support\/dcp7055\/downloads",
+                    "",
+                    null,
+                    "Many",
+                    "Many",
+                    "Many",
+                    "Many"
+                ],
+                [
+                    8,
+                    "AmigaOS 4.1",
+                    2021,
+                    "Commodore Internationa and, Hyperion Entertainment",
+                    "Software",
+                    "Operating Systems",
+                    "Exec",
+                    "PowerPC",
+                    null,
+                    null,
+                    "",
+                    "",
+                    "",
+                    "https:\/\/www.amigaos.net\/",
+                    null,
+                    null,
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                [
+                    9,
+                    "Fedora Workstation Live x86_64 41",
+                    2025,
+                    "Fedora Project",
+                    "Software",
+                    "Operating Systems",
+                    "Linux",
+                    "x64",
+                    null,
+                    null,
+                    "Fedora-Workstation-Live-x86_64-41.iso",
+                    2.3,
+                    "GB",
+                    "https:\/\/fedoraproject.org\/workstation\/download",
+                    null,
+                    "magnet:?xt=urn:btih:14806ad0b5a35e6e574cdbc12372be5f83e3ab73&dn=Fedora-Workstation-Live-x86_64-41",
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                [
+                    10,
+                    "PDFsam Basic",
+                    2025,
+                    "Andrea Vacondio",
+                    "Software",
+                    "Production",
+                    "Documents",
+                    "Many",
+                    null,
+                    null,
+                    "pdfsam-basic-5.3.0-OS-ARCHITECTURE.xyz",
+                    null,
+                    "MB",
+                    "https:\/\/pdfsam.org\/download-pdfsam-basic\/",
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "database": null,
+            "name": "videos",
+            "withoutRowId": false,
+            "strict": false,
+            "ddl": "CREATE TABLE videos (videos_id integer PRIMARY KEY AUTOINCREMENT, name varchar (255) NOT NULL, year integer, director varchar (255), topic varchar (255) NOT NULL DEFAULT Videos, category varchar (255) NOT NULL, type varchar (255) NOT NULL, company varchar (255), media_piece_path varchar (255), screenshot_path varchar (255), file_name varchar (255), file_size float, data_metric varchar (255), source_link text, download_link text, magnet_link text, sha256 varchar (64), sha1 varchar (40), md5 varchar (32), crc32 varchar (8))",
+            "columns": [
+                {
+                    "name": "videos_id",
+                    "type": "integer",
+                    "constraints": [
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY AUTOINCREMENT"
+                        }
+                    ]
+                },
+                {
+                    "name": "name",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "year",
+                    "type": "integer"
+                },
+                {
+                    "name": "director",
+                    "type": "varchar"
+                },
+                {
+                    "name": "topic",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "DEFAULT",
+                            "definition": "DEFAULT Videos"
+                        }
+                    ]
+                },
+                {
+                    "name": "category",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "type",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "company",
+                    "type": "varchar"
+                },
+                {
+                    "name": "media_piece_path",
+                    "type": "varchar"
+                },
+                {
+                    "name": "screenshot_path",
+                    "type": "varchar"
+                },
+                {
+                    "name": "file_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "file_size",
+                    "type": "float"
+                },
+                {
+                    "name": "data_metric",
+                    "type": "varchar"
+                },
+                {
+                    "name": "source_link",
+                    "type": "text"
+                },
+                {
+                    "name": "download_link",
+                    "type": "text"
+                },
+                {
+                    "name": "magnet_link",
+                    "type": "text"
+                },
+                {
+                    "name": "sha256",
+                    "type": "varchar"
+                },
+                {
+                    "name": "sha1",
+                    "type": "varchar"
+                },
+                {
+                    "name": "md5",
+                    "type": "varchar"
+                },
+                {
+                    "name": "crc32",
+                    "type": "varchar"
+                }
+            ],
+            "rows": [
+                [
+                    1,
+                    "Steamboat Willie",
+                    1928,
+                    "Walt Disney",
+                    "Videos",
+                    "Animations",
+                    "Black-and-white",
+                    "Walt Disney Studio",
+                    null,
+                    null,
+                    "steamboat-willie_1928.mp4",
+                    "",
+                    "MB",
+                    "https:\/\/archive.org\/details\/steamboat-willie_1928",
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                [
+                    2,
+                    "The General",
+                    1926,
+                    "Clyde Bruckman & Buster Keaton",
+                    "Videos",
+                    "Silent Films",
+                    "Historical",
+                    "United Artists",
+                    null,
+                    "https:\/\/img.youtube.com\/vi\/D_UdtS-8QS0\/hqdefault.jpg",
+                    null,
+                    null,
+                    null,
+                    "https:\/\/www.youtube.com\/watch?v=D_UdtS-8QS0",
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ]
+            ]
+        }
+    ]
+}
